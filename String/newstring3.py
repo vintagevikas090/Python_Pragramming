@@ -16,5 +16,5 @@ for i in range(length):
     if i<len(s1):
         result = result + s1[i]
     if i<len(s2):
-        result = result + s2[i]
+        result = result + s2[-(i+1)]
 print(result)
