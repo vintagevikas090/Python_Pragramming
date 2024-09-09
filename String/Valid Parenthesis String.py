@@ -45,7 +45,7 @@ class Solution:
         return not stack1
 
 
-
+'''
 (***)
 at the end, s1 may have (   and s2 may have *
 
@@ -53,6 +53,6 @@ so now the * can onlyyy behave as right para or empty string
 And
 if the * has to behave as right para, it should have appeared after the left para in string hence its index should be more then left para index 
 So at any point, the index popped from s1 is more, we return false
-        
+'''
         
         
