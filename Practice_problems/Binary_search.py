@@ -7,11 +7,7 @@ If it exists, return its index in 0-based indexing. Otherwise, return -1.
 
 A = [1, 3, 7, 9, 11, 12, 45]
 
-
-#Direct method
-
 l,u = 0, len(A)-1
-mid = (l+u)//2
 n = int(input())
 value = 0
 flag = True
