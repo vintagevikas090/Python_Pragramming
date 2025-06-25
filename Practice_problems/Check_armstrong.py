@@ -13,3 +13,23 @@ if (n==sum):
     print("true")
 else:
     print("false")
+
+### Method 2
+def get_digits(number):
+    digits = []
+    while number > 0:
+        digits.append(number%10)
+        number = number//10
+    return digits
+
+def check_armstrong_number(num):
+    if num == 0 or num == 1:
+        return True
+
+    digits = get_digits(num)
+    n = len(digits)
+    sum_value = 0
+    for digit in digits:
+        sum_value += digit**n
+
+    return num == sum_value
