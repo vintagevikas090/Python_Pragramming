@@ -39,3 +39,19 @@ def are_permutation(st1, st2):
 s1 = input()
 s2 = input()
 are_permutation(s1, s2)
+
+
+# Code 3
+def get_freq(string):
+    freq = {}
+    for char in string:
+        freq[char] = freq.get(char, 0) + 1
+    return sorted(freq)
+
+def are_permutations(str1, str2):
+    if len(str1) != len(str2):
+        return False
+
+    d1 = get_freq(str1)
+    d2 = get_freq(str2)
+    return d1 == d2
