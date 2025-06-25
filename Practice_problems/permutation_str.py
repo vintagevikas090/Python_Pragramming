@@ -46,7 +46,7 @@ def get_freq(string):
     freq = {}
     for char in string:
         freq[char] = freq.get(char, 0) + 1
-    return sorted(freq)
+    return freq
 
 def are_permutations(str1, str2):
     if len(str1) != len(str2):
