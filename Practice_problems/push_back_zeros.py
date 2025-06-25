@@ -14,3 +14,17 @@ while pos<len(l):
     l[pos]= 0
     pos+=1
 print(l)
+
+
+def move_zeros_to_End(arr):
+    if len(arr) <= 1:
+        return arr
+
+    for i in range(len(arr)):
+        if arr[i] == 0:
+            j = i + 1
+            while j < len(arr) and arr[j] == 0:
+                    j += 1
+            if j < len(arr):
+                arr[i], arr[j] = arr[j], arr[i]
+    return arr
